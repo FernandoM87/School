@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(156, 156, 156);
+}
+
+div {
+    width:200px;
+    height:635px;
+    background-color: white;
+    padding:10px;
+    margin:auto;
+}
+#box1  {
+    width:170px;
+    height:170px;
+    border:14px rgb(173, 67, 67) solid;
+    background-color: red;
+    margin-top: 2px;
+}
+#box2 {
+    width:170px;
+    height:170px;
+    border:14px rgb(124, 121, 18) solid;
+    background-color: rgb(246, 255, 0);
+    margin-top: 2px;
+}
+
+#box3 {
+    width:170px;
+    height:170px;
+    border:14px rgb(1, 68, 1) solid;
+    background-color: green;
+    margin-top: 2px;
+}

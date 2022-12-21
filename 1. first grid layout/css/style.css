@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --black: #00035f;
+    --red: #F25B43;
+    --light-yellow: #F7DB72;
+    --yellow: #FAA528;
+    --cerise: #C13291;  
+    --purple: #793DC3;
+    --blue: #67A1CE;
+    font-size: 18px;
+  }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	padding: 1em 1rem;
+    text-align:justify;
+}
+
+p {
+	margin: 0;
+	padding: 1.5rem 1rem;
+    text-align: justify;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+	line-height: 1.5;
+    color: var(--black); 
+}
+
+.container > * {
+    padding: 1em 2em;
+}
+.container {
+    /* Define CSS Grid template here */
+    display: grid;
+    justify-content: start;
+    grid-template-columns:repeat(8,1fr);
+    grid-template-rows: 150px 350px 150px;/* 
+    grid-template-areas: "header header" "mainmain" "main aside" "footer footer"; */
+    width: 100%;
+}
+header{
+    background:var(--purple);
+    grid-column: 1/span 8;
+}
+.main-content{
+    background: var(--yellow); 
+    grid-row:2/span 3;  
+    grid-column: 2/span 4;
+    
+}
+.sidebar{
+    background:var(--red);
+    grid-row:2/span 3; 
+    grid-column:6/span 2;
+}
+.adspace-1{
+    background: var(--light-yellow);
+    grid-column:2/span 3;
+    grid-row:4/span 1;
+}
+.adspace-2{
+    background: var(--cerise);
+    grid-column:5/span 3;
+    grid-row: 4/span 1;
+}
+footer{
+    background: var(--blue);
+    grid-row: 5/span1;
+    grid-column: 1/ span 8;
+} 
+
+
